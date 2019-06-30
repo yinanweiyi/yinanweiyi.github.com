@@ -74,18 +74,22 @@
         .container .arrow:hover {
             background-color: rgba(0,0,0,0.2);
         }
+		.card{
+			size: auto;
+			width: 24%;
+		}
     </style>
 </head>
 <body>
     <div class="container">
         <div class="wrap" style="left: -600px;">
-            <img src="http://sc.jb51.net/uploads/allimg/130112/2-1301122130215H.jpg" alt="5">
-            <img src="http://img.sc115.com/uploads/allimg/110307/20110307114459136.jpg" alt="1">
-            <img src="http://img5.3lian.com/gaoqing/01/05/075.jpg" alt="2">
-            <img src="http://h.hiphotos.baidu.com/lvpics/w=600/sign=6570942cbf12c8fcb4f3f5cdcc0292b4/d01373f082025aafb3f498c7fdedab64024f1af3.jpg" alt="3">
-            <img src="http://f.hiphotos.baidu.com/lvpics/w=600/sign=4351b6aa8694a4c20a23e42b3ef51bac/024f78f0f736afc3ece868c0b219ebc4b64512aa.jpg" alt="4">
-            <img src="http://sc.jb51.net/uploads/allimg/130112/2-1301122130215H.jpg" alt="5">
-            <img src="http://img.sc115.com/uploads/allimg/110307/20110307114459136.jpg" alt="1">
+            <img src="image/senke_xy05.jpg" alt="6">
+            <img src="image/senke_xy00.jpg" alt="1">
+            <img src="image/senke_xy01.jpg" alt="2">
+            <img src="image/senke_xy02.jpg" alt="3">
+            <img src="image/senke_xy03.jpg" alt="4">
+            <img src="image/senke_xy04.jpg" alt="5">
+            <img src="image/senke_xy05.jpg" alt="6">
         </div>
         <div class="buttons">
             <span class="on">1</span>
@@ -97,6 +101,21 @@
         <a href="javascript:;" class="arrow arrow_left">&lt;</a>
         <a href="javascript:;" class="arrow arrow_right">&gt;</a>
     </div>
+	
+	<div>
+		<img class="card" src="image/senke_xy00.jpg" />
+		<img class="card" src="image/senke_xy00.jpg" />
+		<img class="card" src="image/senke_xy00.jpg" />
+		<img class="card" src="image/senke_xy00.jpg" />
+	</div>
+	
+	<div>
+		<img class="card" src="image/senke_xy00.jpg" />
+		<img class="card" src="image/senke_xy00.jpg" />
+		<img class="card" src="image/senke_xy00.jpg" />
+		<img class="card" src="image/senke_xy00.jpg" />
+	</div>
+	
     <script>
         var wrap = document.querySelector(".wrap");
         var next = document.querySelector(".arrow_right");
@@ -142,7 +161,6 @@
             },2000);
         }
         autoPlay();
-
         var container = document.querySelector(".container");
         container.onmouseenter = function () {
             clearInterval(timer);
@@ -150,7 +168,6 @@
         container.onmouseleave = function () {
             autoPlay();    
         }
-
         var index = 0;
         var dots = document.getElementsByTagName("span");
         function showCurrentDot () {
@@ -159,7 +176,6 @@
             }
             dots[index].className = "on";
         }
-
         for (var i = 0, len = dots.length; i < len; i++){
             (function(i){
                 dots[i].onclick = function () {
@@ -178,5 +194,10 @@
             })(i);            
         }
     </script>
+	
+	<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+		<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+		<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+	</div>
 </body>
 </html>
